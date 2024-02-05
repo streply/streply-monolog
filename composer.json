@@ -1,0 +1,14 @@
+{
+  "name": "streply/streply-monolog",
+  "description": "Streply Monolog Handler",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Streply\\Monolog\\": "src/"
+    }
+  },
+  "require": {
+    "monolog/monolog": "*",
+    "streply/streply-php": "*"
+  }
+}
