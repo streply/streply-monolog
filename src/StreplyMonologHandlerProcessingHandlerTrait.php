@@ -7,7 +7,7 @@ use Monolog\Level;
 use Monolog\Logger;
 use Streply\Enum\Level as StreplyEnumLevel;
 
-if (Monolog\Logger::API >= 3) {
+if (Logger::API >= 3) {
     trait StreplyMonologHandlerProcessingHandlerTrait
     {
         abstract protected function doWrite(array $record): void;
@@ -60,9 +60,9 @@ if (Monolog\Logger::API >= 3) {
         private function getEventType(int $level): int
         {
             switch ($level) {
-                case Monolog\Logger::ERROR:
-                case Monolog\Logger::CRITICAL:
-                case Monolog\Logger::ALERT:
+                case Logger::ERROR:
+                case Logger::CRITICAL:
+                case Logger::ALERT:
                     return self::EVENT_TYPE_ERROR;
             }
 
