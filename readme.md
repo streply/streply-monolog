@@ -28,7 +28,7 @@ $logger->pushHandler(
 );
 ```
 
-You can find the DSN code of the project in the [projects](https://app.streply.com/projects0) tab in your Streply account.
+You can find the DSN code of the project in the [projects](https://app.streply.com/projects) tab in your Streply account.
 
 As a second parameter, you can set an array with optional parameters.
 
